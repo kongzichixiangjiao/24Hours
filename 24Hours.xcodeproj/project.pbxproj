@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021DFBEDD8C4E8BA5FA24F6A /* libPods-24Hours.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03F9D898695D341586D8307 /* libPods-24Hours.a */; };
+		B2E19D16042765F6356CBD76 /* Pods_24Hours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EBC0B2D59047E30A605FA6 /* Pods_24Hours.framework */; };
 		DC2178DB20CFBA2600A777A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */; };
 		DC2178DD20CFBA2600A777A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2178DC20CFBA2600A777A9 /* ViewController.swift */; };
 		DC2178E020CFBA2600A777A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2178DE20CFBA2600A777A9 /* Main.storyboard */; };
 		DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2178E120CFBA2800A777A9 /* Assets.xcassets */; };
 		DC2178E520CFBA2800A777A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */; };
+		DC2178F220CFC02800A777A9 /* YYZhouGongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2178F020CFC02800A777A9 /* YYZhouGongViewController.swift */; };
+		DC2178F320CFC02800A777A9 /* YYZhouGongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2178F120CFC02800A777A9 /* YYZhouGongViewController.xib */; };
+		DC7372B020D0A5B9003FFB79 /* YYWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */; };
+		DC7372BD20D0ACAA003FFB79 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */; };
+		DC7372BE20D0ACAA003FFB79 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */; };
+		DC7372BF20D0ACAA003FFB79 /* GitHubUserContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B420D0ACAA003FFB79 /* GitHubUserContentAPI.swift */; };
+		DC7372C020D0ACAA003FFB79 /* MoyaBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B520D0ACAA003FFB79 /* MoyaBasicViewController.swift */; };
+		DC7372C120D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B620D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift */; };
+		DC7372C220D0ACAA003FFB79 /* YYBaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B820D0ACAA003FFB79 /* YYBaseUrl.swift */; };
+		DC7372C320D0ACAA003FFB79 /* YYModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B920D0ACAA003FFB79 /* YYModel+Extension.swift */; };
+		DC7372C420D0ACAA003FFB79 /* YYRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372BA20D0ACAA003FFB79 /* YYRequestManager.swift */; };
+		DC7372C520D0ACAA003FFB79 /* YYRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372BB20D0ACAA003FFB79 /* YYRequestModel.swift */; };
+		DC7372C620D0ACAA003FFB79 /* YYTargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */; };
+		DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */; };
+		DCDE58BD20D0CB9F00310A03 /* area.text in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BC20D0CB9F00310A03 /* area.text */; };
+		DCDE58BF20D0E87F00310A03 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BE20D0E87F00310A03 /* area.plist */; };
+		DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58D420D0F01700310A03 /* YYAreaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		78458D47A169870FFDEB6A35 /* Pods-24Hours.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-24Hours.release.xcconfig"; path = "Pods/Target Support Files/Pods-24Hours/Pods-24Hours.release.xcconfig"; sourceTree = "<group>"; };
+		98EBC0B2D59047E30A605FA6 /* Pods_24Hours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_24Hours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E094E91184075E905BC810 /* Pods-24Hours.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-24Hours.debug.xcconfig"; path = "Pods/Target Support Files/Pods-24Hours/Pods-24Hours.debug.xcconfig"; sourceTree = "<group>"; };
-		C03F9D898695D341586D8307 /* libPods-24Hours.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-24Hours.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2178D720CFBA2600A777A9 /* 24Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 24Hours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC2178DC20CFBA2600A777A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +43,24 @@
 		DC2178E120CFBA2800A777A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2178E420CFBA2800A777A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC2178E620CFBA2800A777A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC2178EC20CFBB9600A777A9 /* 24Hours-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "24Hours-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC2178F020CFC02800A777A9 /* YYZhouGongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYZhouGongViewController.swift; sourceTree = "<group>"; };
+		DC2178F120CFC02800A777A9 /* YYZhouGongViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYZhouGongViewController.xib; sourceTree = "<group>"; };
+		DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherAPI.swift; sourceTree = "<group>"; };
+		DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
+		DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		DC7372B420D0ACAA003FFB79 /* GitHubUserContentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserContentAPI.swift; sourceTree = "<group>"; };
+		DC7372B520D0ACAA003FFB79 /* MoyaBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaBasicViewController.swift; sourceTree = "<group>"; };
+		DC7372B620D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaMultiTargetViewController.swift; sourceTree = "<group>"; };
+		DC7372B820D0ACAA003FFB79 /* YYBaseUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseUrl.swift; sourceTree = "<group>"; };
+		DC7372B920D0ACAA003FFB79 /* YYModel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYModel+Extension.swift"; sourceTree = "<group>"; };
+		DC7372BA20D0ACAA003FFB79 /* YYRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestManager.swift; sourceTree = "<group>"; };
+		DC7372BB20D0ACAA003FFB79 /* YYRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestModel.swift; sourceTree = "<group>"; };
+		DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYTargetType+Extension.swift"; sourceTree = "<group>"; };
+		DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherModel.swift; sourceTree = "<group>"; };
+		DCDE58BC20D0CB9F00310A03 /* area.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = area.text; sourceTree = "<group>"; };
+		DCDE58BE20D0E87F00310A03 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		DCDE58D420D0F01700310A03 /* YYAreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAreaModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021DFBEDD8C4E8BA5FA24F6A /* libPods-24Hours.a in Frameworks */,
+				B2E19D16042765F6356CBD76 /* Pods_24Hours.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,20 +105,62 @@
 		DC2178D920CFBA2600A777A9 /* 24Hours */ = {
 			isa = PBXGroup;
 			children = (
+				DC2178F420CFC13C00A777A9 /* YYRequest */,
 				DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */,
 				DC2178DC20CFBA2600A777A9 /* ViewController.swift */,
+				DCDE58BC20D0CB9F00310A03 /* area.text */,
+				DCDE58BE20D0E87F00310A03 /* area.plist */,
+				DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */,
+				DCDE58D420D0F01700310A03 /* YYAreaModel.swift */,
+				DC2178F020CFC02800A777A9 /* YYZhouGongViewController.swift */,
+				DC2178F120CFC02800A777A9 /* YYZhouGongViewController.xib */,
 				DC2178DE20CFBA2600A777A9 /* Main.storyboard */,
 				DC2178E120CFBA2800A777A9 /* Assets.xcassets */,
 				DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */,
 				DC2178E620CFBA2800A777A9 /* Info.plist */,
+				DC2178EC20CFBB9600A777A9 /* 24Hours-Bridging-Header.h */,
 			);
 			path = 24Hours;
+			sourceTree = "<group>";
+		};
+		DC2178F420CFC13C00A777A9 /* YYRequest */ = {
+			isa = PBXGroup;
+			children = (
+				DC7372B120D0ACAA003FFB79 /* MoyaDemo */,
+				DC7372B720D0ACAA003FFB79 /* YYRequest1.0 */,
+				DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */,
+			);
+			path = YYRequest;
+			sourceTree = "<group>";
+		};
+		DC7372B120D0ACAA003FFB79 /* MoyaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */,
+				DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */,
+				DC7372B420D0ACAA003FFB79 /* GitHubUserContentAPI.swift */,
+				DC7372B520D0ACAA003FFB79 /* MoyaBasicViewController.swift */,
+				DC7372B620D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift */,
+			);
+			path = MoyaDemo;
+			sourceTree = "<group>";
+		};
+		DC7372B720D0ACAA003FFB79 /* YYRequest1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				DC7372B820D0ACAA003FFB79 /* YYBaseUrl.swift */,
+				DC7372B920D0ACAA003FFB79 /* YYModel+Extension.swift */,
+				DC7372BA20D0ACAA003FFB79 /* YYRequestManager.swift */,
+				DC7372BB20D0ACAA003FFB79 /* YYRequestModel.swift */,
+				DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */,
+			);
+			path = YYRequest1.0;
 			sourceTree = "<group>";
 		};
 		F9D66E0AF5AB46D2F63D4C5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C03F9D898695D341586D8307 /* libPods-24Hours.a */,
+				98EBC0B2D59047E30A605FA6 /* Pods_24Hours.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +176,7 @@
 				DC2178D320CFBA2600A777A9 /* Sources */,
 				DC2178D420CFBA2600A777A9 /* Frameworks */,
 				DC2178D520CFBA2600A777A9 /* Resources */,
+				094D4974D8186D2553E9B0BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,6 +199,7 @@
 				TargetAttributes = {
 					DC2178D620CFBA2600A777A9 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -149,13 +228,46 @@
 			files = (
 				DC2178E520CFBA2800A777A9 /* LaunchScreen.storyboard in Resources */,
 				DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */,
+				DCDE58BD20D0CB9F00310A03 /* area.text in Resources */,
 				DC2178E020CFBA2600A777A9 /* Main.storyboard in Resources */,
+				DCDE58BF20D0E87F00310A03 /* area.plist in Resources */,
+				DC2178F320CFC02800A777A9 /* YYZhouGongViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		094D4974D8186D2553E9B0BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-24Hours/Pods-24Hours-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-24Hours/Pods-24Hours-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5FEBB336483AF41C0F778534 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,8 +293,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7372C620D0ACAA003FFB79 /* YYTargetType+Extension.swift in Sources */,
+				DC2178F220CFC02800A777A9 /* YYZhouGongViewController.swift in Sources */,
+				DC7372BE20D0ACAA003FFB79 /* GitHubAPI.swift in Sources */,
+				DC7372C320D0ACAA003FFB79 /* YYModel+Extension.swift in Sources */,
+				DC7372C220D0ACAA003FFB79 /* YYBaseUrl.swift in Sources */,
+				DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */,
+				DC7372BF20D0ACAA003FFB79 /* GitHubUserContentAPI.swift in Sources */,
+				DC7372C520D0ACAA003FFB79 /* YYRequestModel.swift in Sources */,
+				DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */,
 				DC2178DD20CFBA2600A777A9 /* ViewController.swift in Sources */,
+				DC7372C120D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift in Sources */,
+				DC7372B020D0A5B9003FFB79 /* YYWeatherAPI.swift in Sources */,
 				DC2178DB20CFBA2600A777A9 /* AppDelegate.swift in Sources */,
+				DC7372BD20D0ACAA003FFB79 /* GiphyAPI.swift in Sources */,
+				DC7372C020D0ACAA003FFB79 /* MoyaBasicViewController.swift in Sources */,
+				DC7372C420D0ACAA003FFB79 /* YYRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -327,12 +453,18 @@
 			baseConfigurationReference = A9E094E91184075E905BC810 /* Pods-24Hours.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M64M9WGH3L;
 				INFOPLIST_FILE = 24Hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JN.PuXin.-4Hours";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.24hours.jianan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "24Hours/24Hours-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -343,12 +475,17 @@
 			baseConfigurationReference = 78458D47A169870FFDEB6A35 /* Pods-24Hours.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M64M9WGH3L;
 				INFOPLIST_FILE = 24Hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JN.PuXin.-4Hours";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.24hours.jianan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "24Hours/24Hours-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

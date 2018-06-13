@@ -1,25 +1,55 @@
 PODS:
+  - Alamofire (4.7.2)
   - AMapFoundation (1.4.3)
   - AMapLocation (2.6.0):
     - AMapFoundation (~> 1.4)
   - AMapSearch (6.1.0):
     - AMapFoundation (~> 1.4)
+  - HandyJSON (4.1.1)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - PKHUD (5.0.0)
+  - Result (3.2.4)
+  - RxSwift (4.1.2)
+  - SCLAlertView (0.8)
 
 DEPENDENCIES:
   - AMapLocation
   - AMapSearch
+  - HandyJSON
+  - Moya
+  - PKHUD (~> 5.0)
+  - RxSwift
+  - SCLAlertView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - AMapFoundation
     - AMapLocation
     - AMapSearch
+    - HandyJSON
+    - Moya
+    - PKHUD
+    - Result
+    - RxSwift
+    - SCLAlertView
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AMapFoundation: 973682cfe60b92efd73a8ef8f1144fa0fa8e1296
   AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
   AMapSearch: e3f96bd0681abe70abba303709a1a05625a8f76c
+  HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: 8f9227de2596605c48f2230956cdb2de05518df8
+PODFILE CHECKSUM: 6728b9612121019eb7b57783d14abd2044290aef
 
 COCOAPODS: 1.5.3
