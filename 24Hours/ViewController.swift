@@ -15,29 +15,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let path = Bundle.main.path(forResource: "area", ofType: "plist")
-        let arr = NSArray.init(contentsOfFile: path!)
-        if let list = [YYAreaModel].deserialize(from: arr) {
-            print(list)
-        }
-        
-        
-        weatherProvider.request(MultiTarget(WeatherAPI.weathers(city: "CHBJ000100"))) { (result) in
-            let response = try! result.dematerialize()
-            let value = try! response.mapJSON()
-            print(value)
-            print(YYWeatherModel.deserialize(from: value as! [String : Any])?.status)
-            print(YYWeatherModel.deserialize(from: value as! [String : Any])?.weather?.first)
-            print(YYWeatherModel.deserialize(from: value as! [String : Any])?.weather?.first?.city_name)
-            switch result {
-            case .success: break
-            case .failure: break
-            }
+        self.view.backgroundColor = UIColor.white
 
-        }
-        
     }
+
     
     func gd_requestWeatherData() {
         search = AMapSearchAPI()
@@ -69,17 +50,4 @@ extension ViewController: AMapSearchDelegate {
         print("Error:\(error)")
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -7,7 +7,7 @@
 #define _24Hours_h
 
 #import <AMapFoundationKit/AMapFoundationKit.h>
-
 #import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
 
 #endif /* _24Hours_h */

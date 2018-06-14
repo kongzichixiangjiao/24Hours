@@ -13,10 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        AMapServices.shared().apiKey = "023a97249df79500209cc99475397902"
+        
+        rooter()
+        AMapRegister()
+        
         return true
     }
 

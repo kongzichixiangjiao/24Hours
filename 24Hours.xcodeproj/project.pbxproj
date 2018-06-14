@@ -13,8 +13,6 @@
 		DC2178E020CFBA2600A777A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2178DE20CFBA2600A777A9 /* Main.storyboard */; };
 		DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2178E120CFBA2800A777A9 /* Assets.xcassets */; };
 		DC2178E520CFBA2800A777A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */; };
-		DC2178F220CFC02800A777A9 /* YYZhouGongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2178F020CFC02800A777A9 /* YYZhouGongViewController.swift */; };
-		DC2178F320CFC02800A777A9 /* YYZhouGongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2178F120CFC02800A777A9 /* YYZhouGongViewController.xib */; };
 		DC7372B020D0A5B9003FFB79 /* YYWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */; };
 		DC7372BD20D0ACAA003FFB79 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */; };
 		DC7372BE20D0ACAA003FFB79 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */; };
@@ -30,6 +28,13 @@
 		DCDE58BD20D0CB9F00310A03 /* area.text in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BC20D0CB9F00310A03 /* area.text */; };
 		DCDE58BF20D0E87F00310A03 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BE20D0E87F00310A03 /* area.plist */; };
 		DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58D420D0F01700310A03 /* YYAreaModel.swift */; };
+		DCDE58E120D0FE3400310A03 /* Left.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58E020D0FE3400310A03 /* Left.storyboard */; };
+		DCDE58E320D0FE3D00310A03 /* Right.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58E220D0FE3D00310A03 /* Right.storyboard */; };
+		DCDE58E520D105B200310A03 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */; };
+		DCDE58E720D10AAE00310A03 /* ViewController+Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */; };
+		DCDE58F020D10C9600310A03 /* YYLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58ED20D10C9600310A03 /* YYLeftViewController.swift */; };
+		DCDE58F120D10C9600310A03 /* YYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58EE20D10C9600310A03 /* YYMainViewController.swift */; };
+		DCDE58F220D10C9600310A03 /* YYRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58EF20D10C9600310A03 /* YYRightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +49,6 @@
 		DC2178E420CFBA2800A777A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC2178E620CFBA2800A777A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2178EC20CFBB9600A777A9 /* 24Hours-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "24Hours-Bridging-Header.h"; sourceTree = "<group>"; };
-		DC2178F020CFC02800A777A9 /* YYZhouGongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYZhouGongViewController.swift; sourceTree = "<group>"; };
-		DC2178F120CFC02800A777A9 /* YYZhouGongViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYZhouGongViewController.xib; sourceTree = "<group>"; };
 		DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherAPI.swift; sourceTree = "<group>"; };
 		DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
 		DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
@@ -61,6 +64,13 @@
 		DCDE58BC20D0CB9F00310A03 /* area.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = area.text; sourceTree = "<group>"; };
 		DCDE58BE20D0E87F00310A03 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		DCDE58D420D0F01700310A03 /* YYAreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAreaModel.swift; sourceTree = "<group>"; };
+		DCDE58E020D0FE3400310A03 /* Left.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Left.storyboard; sourceTree = "<group>"; };
+		DCDE58E220D0FE3D00310A03 /* Right.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Right.storyboard; sourceTree = "<group>"; };
+		DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Slide.swift"; sourceTree = "<group>"; };
+		DCDE58ED20D10C9600310A03 /* YYLeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLeftViewController.swift; sourceTree = "<group>"; };
+		DCDE58EE20D10C9600310A03 /* YYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMainViewController.swift; sourceTree = "<group>"; };
+		DCDE58EF20D10C9600310A03 /* YYRightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +117,17 @@
 			children = (
 				DC2178F420CFC13C00A777A9 /* YYRequest */,
 				DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */,
+				DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */,
 				DC2178DC20CFBA2600A777A9 /* ViewController.swift */,
+				DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */,
+				DCDE58EC20D10C9600310A03 /* Main */,
 				DCDE58BC20D0CB9F00310A03 /* area.text */,
 				DCDE58BE20D0E87F00310A03 /* area.plist */,
 				DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */,
 				DCDE58D420D0F01700310A03 /* YYAreaModel.swift */,
-				DC2178F020CFC02800A777A9 /* YYZhouGongViewController.swift */,
-				DC2178F120CFC02800A777A9 /* YYZhouGongViewController.xib */,
 				DC2178DE20CFBA2600A777A9 /* Main.storyboard */,
+				DCDE58E020D0FE3400310A03 /* Left.storyboard */,
+				DCDE58E220D0FE3D00310A03 /* Right.storyboard */,
 				DC2178E120CFBA2800A777A9 /* Assets.xcassets */,
 				DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */,
 				DC2178E620CFBA2800A777A9 /* Info.plist */,
@@ -155,6 +168,16 @@
 				DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */,
 			);
 			path = YYRequest1.0;
+			sourceTree = "<group>";
+		};
+		DCDE58EC20D10C9600310A03 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE58ED20D10C9600310A03 /* YYLeftViewController.swift */,
+				DCDE58EE20D10C9600310A03 /* YYMainViewController.swift */,
+				DCDE58EF20D10C9600310A03 /* YYRightViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F9D66E0AF5AB46D2F63D4C5A /* Frameworks */ = {
@@ -227,11 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2178E520CFBA2800A777A9 /* LaunchScreen.storyboard in Resources */,
+				DCDE58E120D0FE3400310A03 /* Left.storyboard in Resources */,
 				DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */,
 				DCDE58BD20D0CB9F00310A03 /* area.text in Resources */,
+				DCDE58E320D0FE3D00310A03 /* Right.storyboard in Resources */,
 				DC2178E020CFBA2600A777A9 /* Main.storyboard in Resources */,
 				DCDE58BF20D0E87F00310A03 /* area.plist in Resources */,
-				DC2178F320CFC02800A777A9 /* YYZhouGongViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +276,8 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -262,6 +288,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -293,8 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE58F120D10C9600310A03 /* YYMainViewController.swift in Sources */,
 				DC7372C620D0ACAA003FFB79 /* YYTargetType+Extension.swift in Sources */,
-				DC2178F220CFC02800A777A9 /* YYZhouGongViewController.swift in Sources */,
 				DC7372BE20D0ACAA003FFB79 /* GitHubAPI.swift in Sources */,
 				DC7372C320D0ACAA003FFB79 /* YYModel+Extension.swift in Sources */,
 				DC7372C220D0ACAA003FFB79 /* YYBaseUrl.swift in Sources */,
@@ -304,11 +332,15 @@
 				DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */,
 				DC2178DD20CFBA2600A777A9 /* ViewController.swift in Sources */,
 				DC7372C120D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift in Sources */,
+				DCDE58E520D105B200310A03 /* AppDelegate+Extension.swift in Sources */,
 				DC7372B020D0A5B9003FFB79 /* YYWeatherAPI.swift in Sources */,
 				DC2178DB20CFBA2600A777A9 /* AppDelegate.swift in Sources */,
 				DC7372BD20D0ACAA003FFB79 /* GiphyAPI.swift in Sources */,
 				DC7372C020D0ACAA003FFB79 /* MoyaBasicViewController.swift in Sources */,
+				DCDE58E720D10AAE00310A03 /* ViewController+Slide.swift in Sources */,
+				DCDE58F220D10C9600310A03 /* YYRightViewController.swift in Sources */,
 				DC7372C420D0ACAA003FFB79 /* YYRequestManager.swift in Sources */,
+				DCDE58F020D10C9600310A03 /* YYLeftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,16 +489,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M64M9WGH3L;
 				INFOPLIST_FILE = 24Hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.24hours.jianan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "24Hours/24Hours-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,15 +508,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M64M9WGH3L;
 				INFOPLIST_FILE = 24Hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.24hours.jianan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "24Hours/24Hours-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

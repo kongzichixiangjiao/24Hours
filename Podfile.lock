@@ -15,6 +15,8 @@ PODS:
   - Result (3.2.4)
   - RxSwift (4.1.2)
   - SCLAlertView (0.8)
+  - SlideMenuControllerSwift (4.0.0)
+  - SwiftDate (4.5.1)
 
 DEPENDENCIES:
   - AMapLocation
@@ -24,6 +26,8 @@ DEPENDENCIES:
   - PKHUD (~> 5.0)
   - RxSwift
   - SCLAlertView
+  - SlideMenuControllerSwift
+  - SwiftDate
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -37,6 +41,8 @@ SPEC REPOS:
     - Result
     - RxSwift
     - SCLAlertView
+    - SlideMenuControllerSwift
+    - SwiftDate
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -49,7 +55,9 @@ SPEC CHECKSUMS:
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: 6728b9612121019eb7b57783d14abd2044290aef
+PODFILE CHECKSUM: 73145c74c6d413263f07acc401fc5f62b1b6160a
 
 COCOAPODS: 1.5.3
