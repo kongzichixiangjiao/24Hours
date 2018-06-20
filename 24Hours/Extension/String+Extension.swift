@@ -8,6 +8,22 @@
 
 import UIKit
 import Foundation
+
+
+extension String {
+    var cutShi: String {
+        let arr = self.components(separatedBy: "市")
+        return arr.first ?? ""
+    }
+    var cutSheng: String {
+        let arr = self.components(separatedBy: "省")
+        return arr.first ?? ""
+    }
+    var cutShengShi: String {
+        return self.cutSheng.cutShi
+    }
+}
+
 extension String {
     var int64: Int64 {
         return Int64(self) ?? -99999999999

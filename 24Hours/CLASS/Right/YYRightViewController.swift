@@ -14,7 +14,7 @@ class YYRightViewController: YYBaseViewController {
     
     var mainVC: YYMainViewController!
     
-    var areas: [String] = ["北京市", "朝阳,北京", "昌平,北京", "漳州,福建", "宁德市"]
+    var areas: [String] = ["北京市", "朝阳区,北京", "昌平,北京", "漳州,福建", "宁德市"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,6 @@ class YYRightViewController: YYBaseViewController {
         
         initViews()
     }
-    
     
     func initViews() {
         tableView.yy_register(identifier: YYLeftTableViewCell.identifier)

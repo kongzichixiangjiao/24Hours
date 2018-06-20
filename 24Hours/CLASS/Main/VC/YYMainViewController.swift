@@ -75,10 +75,17 @@ class YYMainViewController: YYBaseCollectionViewController {
                 
                 if let reGeocode = reGeocode {
                     NSLog("reGeocode:%@", reGeocode)
-                    weakSelf.locationString = reGeocode.province + reGeocode.city
+                    // country:中国;province:北京市; city:北京市; district:朝阳区;
+                    if reGeocode.province == reGeocode.city {
+                        weakSelf.locationString = reGeocode.district + "," + reGeocode.city.cutShengShi
+                    } else {
+                        weakSelf.locationString = reGeocode.district + "," + reGeocode.city.cutShengShi + "," + reGeocode.province.cutShengShi
+                    }
+                    
                     
                     weakSelf.requestWeatherData(location: weakSelf.locationString)
                     weakSelf.requestAirQualtyData(location: weakSelf.locationString)
+                    weakSelf.requestAll(location: weakSelf.locationString)
                 }
             }
         })) {
@@ -87,12 +94,14 @@ class YYMainViewController: YYBaseCollectionViewController {
             pk_hud_error(text: "定位错误")
         }
         
-        requestAll(location: "北京市")
+//        requestAll(location: "北京市")
     }
     
     func requestAll(location: String) {
+        locationString = location
         requestWeatherData(location: location)
         requestAirQualtyData(location: location)
+        self.collectionView.contentOffset = CGPoint.zero
     }
     
     func requestWeatherData(location: String) {
@@ -175,7 +184,6 @@ extension YYMainViewController {
 
 extension YYMainViewController: YYMainCollectionViewCellRefreshDelegate {
     func mainCollectionViewCellRefresh() {
-        locationString = "北京"
         self.requestWeatherData(location: locationString)
     }
 }
