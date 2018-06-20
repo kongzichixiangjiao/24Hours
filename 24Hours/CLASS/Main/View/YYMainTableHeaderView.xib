@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YYMainTableHeaderView" customModule="_4Hours" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市，朝阳区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-Q0-gP8">
+                    <rect key="frame" x="0.0" y="20" width="375" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88o-Wt-3Md">
+                    <rect key="frame" x="149" y="47" width="77" height="57"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雷阵雨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-41-NUN">
+                    <rect key="frame" x="161.5" y="112" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空气质量：" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-sK-G2K">
+                    <rect key="frame" x="0.0" y="143" width="375" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="csc-sK-G2K" secondAttribute="trailing" id="5Xt-WL-5PX"/>
+                <constraint firstItem="GZG-41-NUN" firstAttribute="top" secondItem="88o-Wt-3Md" secondAttribute="bottom" constant="8" id="EE0-Pr-5FC"/>
+                <constraint firstItem="csc-sK-G2K" firstAttribute="top" secondItem="GZG-41-NUN" secondAttribute="bottom" constant="10" id="Ep2-zt-arx"/>
+                <constraint firstItem="csc-sK-G2K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Glf-X7-dUA"/>
+                <constraint firstItem="k2E-Q0-gP8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RKa-jN-YRx"/>
+                <constraint firstItem="GZG-41-NUN" firstAttribute="centerX" secondItem="88o-Wt-3Md" secondAttribute="centerX" id="Vma-QQ-bfp"/>
+                <constraint firstItem="k2E-Q0-gP8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="jIg-eQ-h3G"/>
+                <constraint firstItem="88o-Wt-3Md" firstAttribute="centerX" secondItem="k2E-Q0-gP8" secondAttribute="centerX" id="np0-f9-EQ8"/>
+                <constraint firstItem="88o-Wt-3Md" firstAttribute="top" secondItem="k2E-Q0-gP8" secondAttribute="bottom" constant="8" id="qmU-k9-UmB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="k2E-Q0-gP8" secondAttribute="trailing" id="toq-jn-klD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="airQualityLabel" destination="csc-sK-G2K" id="P0w-BH-fhp"/>
+                <outlet property="dressLabel" destination="k2E-Q0-gP8" id="r9p-NP-M74"/>
+                <outlet property="temperatureLabel" destination="88o-Wt-3Md" id="hWe-oj-YAj"/>
+                <outlet property="weatherLabel" destination="GZG-41-NUN" id="FBC-t1-fUM"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-177"/>
+        </view>
+    </objects>
+</document>

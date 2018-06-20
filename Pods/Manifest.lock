@@ -5,6 +5,7 @@ PODS:
     - AMapFoundation (~> 1.4)
   - AMapSearch (6.1.0):
     - AMapFoundation (~> 1.4)
+  - DGElasticPullToRefresh (1.1)
   - HandyJSON (4.1.1)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
@@ -16,17 +17,20 @@ PODS:
   - RxSwift (4.1.2)
   - SCLAlertView (0.8)
   - SlideMenuControllerSwift (4.0.0)
+  - SnapKit (4.0.0)
   - SwiftDate (4.5.1)
 
 DEPENDENCIES:
   - AMapLocation
   - AMapSearch
+  - DGElasticPullToRefresh
   - HandyJSON
   - Moya
   - PKHUD (~> 5.0)
   - RxSwift
   - SCLAlertView
   - SlideMenuControllerSwift
+  - SnapKit
   - SwiftDate
 
 SPEC REPOS:
@@ -35,6 +39,7 @@ SPEC REPOS:
     - AMapFoundation
     - AMapLocation
     - AMapSearch
+    - DGElasticPullToRefresh
     - HandyJSON
     - Moya
     - PKHUD
@@ -42,6 +47,7 @@ SPEC REPOS:
     - RxSwift
     - SCLAlertView
     - SlideMenuControllerSwift
+    - SnapKit
     - SwiftDate
 
 SPEC CHECKSUMS:
@@ -49,6 +55,7 @@ SPEC CHECKSUMS:
   AMapFoundation: 973682cfe60b92efd73a8ef8f1144fa0fa8e1296
   AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
   AMapSearch: e3f96bd0681abe70abba303709a1a05625a8f76c
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
   HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
@@ -56,8 +63,9 @@ SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: 73145c74c6d413263f07acc401fc5f62b1b6160a
+PODFILE CHECKSUM: af0ca380bd9b1fded6f22ff62c1ba13a53443883
 
 COCOAPODS: 1.5.3

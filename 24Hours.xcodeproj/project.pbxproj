@@ -10,31 +10,69 @@
 		B2E19D16042765F6356CBD76 /* Pods_24Hours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EBC0B2D59047E30A605FA6 /* Pods_24Hours.framework */; };
 		DC2178DB20CFBA2600A777A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */; };
 		DC2178DD20CFBA2600A777A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2178DC20CFBA2600A777A9 /* ViewController.swift */; };
-		DC2178E020CFBA2600A777A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2178DE20CFBA2600A777A9 /* Main.storyboard */; };
 		DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2178E120CFBA2800A777A9 /* Assets.xcassets */; };
-		DC2178E520CFBA2800A777A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */; };
-		DC7372B020D0A5B9003FFB79 /* YYWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */; };
-		DC7372BD20D0ACAA003FFB79 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */; };
-		DC7372BE20D0ACAA003FFB79 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */; };
-		DC7372BF20D0ACAA003FFB79 /* GitHubUserContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B420D0ACAA003FFB79 /* GitHubUserContentAPI.swift */; };
-		DC7372C020D0ACAA003FFB79 /* MoyaBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B520D0ACAA003FFB79 /* MoyaBasicViewController.swift */; };
-		DC7372C120D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B620D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift */; };
-		DC7372C220D0ACAA003FFB79 /* YYBaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B820D0ACAA003FFB79 /* YYBaseUrl.swift */; };
-		DC7372C320D0ACAA003FFB79 /* YYModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372B920D0ACAA003FFB79 /* YYModel+Extension.swift */; };
-		DC7372C420D0ACAA003FFB79 /* YYRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372BA20D0ACAA003FFB79 /* YYRequestManager.swift */; };
-		DC7372C520D0ACAA003FFB79 /* YYRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372BB20D0ACAA003FFB79 /* YYRequestModel.swift */; };
-		DC7372C620D0ACAA003FFB79 /* YYTargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */; };
+		DC44432320D9EFFC00FD9FA1 /* weatherList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC44432220D9EFFC00FD9FA1 /* weatherList.plist */; };
+		DC44432520D9F68000FD9FA1 /* YYWeatherListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44432420D9F68000FD9FA1 /* YYWeatherListModel.swift */; };
+		DC44432E20DA3B9B00FD9FA1 /* YYLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44432D20DA3B9B00FD9FA1 /* YYLeftViewController.swift */; };
+		DC44433120DA3BC700FD9FA1 /* YYLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44432F20DA3BC700FD9FA1 /* YYLeftTableViewCell.swift */; };
+		DC44433220DA3BC700FD9FA1 /* YYLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC44433020DA3BC700FD9FA1 /* YYLeftTableViewCell.xib */; };
+		DC44433620DA3D2C00FD9FA1 /* YYRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44433520DA3D2C00FD9FA1 /* YYRightViewController.swift */; };
+		DC44433920DA3D5A00FD9FA1 /* YYAirQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44433720DA3D5A00FD9FA1 /* YYAirQualityViewController.swift */; };
+		DC44433A20DA3D5A00FD9FA1 /* YYAirQualityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC44433820DA3D5A00FD9FA1 /* YYAirQualityViewController.xib */; };
+		DC44433C20DA437B00FD9FA1 /* airQualityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC44433B20DA437B00FD9FA1 /* airQualityList.plist */; };
+		DC44433F20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44433D20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift */; };
+		DC44434020DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC44433E20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib */; };
+		DC6A84A420D21389004C43AC /* YYBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84A220D21388004C43AC /* YYBaseCollectionViewController.swift */; };
+		DC6A84A520D21389004C43AC /* YYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84A320D21388004C43AC /* YYBaseViewController.swift */; };
+		DC6A84BA20D21487004C43AC /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84A920D21487004C43AC /* Array+Extension.swift */; };
+		DC6A84BB20D21487004C43AC /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84AA20D21487004C43AC /* CGSize+Extension.swift */; };
+		DC6A84BC20D21487004C43AC /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84AB20D21487004C43AC /* Int+Extension.swift */; };
+		DC6A84BD20D21487004C43AC /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84AC20D21487004C43AC /* NSObject+Extension.swift */; };
+		DC6A84BE20D21487004C43AC /* ScrollView+PlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84AD20D21487004C43AC /* ScrollView+PlaceHolder.swift */; };
+		DC6A84BF20D21487004C43AC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84AE20D21487004C43AC /* String+Extension.swift */; };
+		DC6A84C020D21487004C43AC /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84AF20D21487004C43AC /* UICollectionView+Extension.swift */; };
+		DC6A84C120D21487004C43AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B020D21487004C43AC /* UIColor+Extension.swift */; };
+		DC6A84C220D21487004C43AC /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B120D21487004C43AC /* UIDevice+Extension.swift */; };
+		DC6A84C320D21487004C43AC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B220D21487004C43AC /* UIImage+Extension.swift */; };
+		DC6A84C420D21487004C43AC /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B320D21487004C43AC /* UIImageView+Extension.swift */; };
+		DC6A84C520D21487004C43AC /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B420D21487004C43AC /* UIView+Frame.swift */; };
+		DC6A84C620D21487004C43AC /* UIView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B520D21487004C43AC /* UIView+Gesture.swift */; };
+		DC6A84C720D21487004C43AC /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B620D21487004C43AC /* UIView+Layout.swift */; };
+		DC6A84C820D21487004C43AC /* UIView+LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B720D21487004C43AC /* UIView+LoadView.swift */; };
+		DC6A84C920D21487004C43AC /* UIView+Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B820D21487004C43AC /* UIView+Shot.swift */; };
+		DC6A84CA20D21487004C43AC /* UIView+XIB_Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84B920D21487004C43AC /* UIView+XIB_Layer.swift */; };
+		DC6A84D020D24375004C43AC /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84CF20D24374004C43AC /* UITableView+Extension.swift */; };
+		DC6A84DA20D243F2004C43AC /* YYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84D520D243F2004C43AC /* YYMainViewController.swift */; };
+		DC6A84DB20D243F2004C43AC /* YYMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84D720D243F2004C43AC /* YYMainCollectionViewCell.swift */; };
+		DC6A84DC20D243F2004C43AC /* YYMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6A84D820D243F2004C43AC /* YYMainCollectionViewCell.xib */; };
+		DC6A84DD20D243F2004C43AC /* YYMainFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84D920D243F2004C43AC /* YYMainFlowLayout.swift */; };
+		DC6A84E820D244F1004C43AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6A84E420D244F0004C43AC /* LaunchScreen.storyboard */; };
+		DC6A84E920D244F1004C43AC /* Left.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6A84E520D244F0004C43AC /* Left.storyboard */; };
+		DC6A84EA20D244F1004C43AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6A84E620D244F0004C43AC /* Main.storyboard */; };
+		DC6A84EB20D244F1004C43AC /* Right.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6A84E720D244F0004C43AC /* Right.storyboard */; };
+		DC6A84EF20D24583004C43AC /* YYMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84ED20D24583004C43AC /* YYMainTableViewCell.swift */; };
+		DC6A84F020D24583004C43AC /* YYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6A84EE20D24583004C43AC /* YYMainTableViewCell.xib */; };
+		DC6A850120D2483C004C43AC /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84F520D2483B004C43AC /* GiphyAPI.swift */; };
+		DC6A850220D2483C004C43AC /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84F620D2483B004C43AC /* GitHubAPI.swift */; };
+		DC6A850320D2483C004C43AC /* GitHubUserContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84F720D2483B004C43AC /* GitHubUserContentAPI.swift */; };
+		DC6A850420D2483C004C43AC /* MoyaBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84F820D2483B004C43AC /* MoyaBasicViewController.swift */; };
+		DC6A850520D2483C004C43AC /* MoyaMultiTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84F920D2483B004C43AC /* MoyaMultiTargetViewController.swift */; };
+		DC6A850620D2483C004C43AC /* YYBaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84FB20D2483B004C43AC /* YYBaseUrl.swift */; };
+		DC6A850720D2483C004C43AC /* YYModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84FC20D2483B004C43AC /* YYModel+Extension.swift */; };
+		DC6A850820D2483C004C43AC /* YYRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84FD20D2483B004C43AC /* YYRequestManager.swift */; };
+		DC6A850920D2483C004C43AC /* YYRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84FE20D2483B004C43AC /* YYRequestModel.swift */; };
+		DC6A850A20D2483C004C43AC /* YYTargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84FF20D2483B004C43AC /* YYTargetType+Extension.swift */; };
+		DC6A850D20D24843004C43AC /* YYOnePixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A850C20D24843004C43AC /* YYOnePixView.swift */; };
+		DC6A850F20D24A42004C43AC /* YYMainTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A850E20D24A42004C43AC /* YYMainTableHeaderView.swift */; };
+		DC6A851120D24A4D004C43AC /* YYMainTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6A851020D24A4D004C43AC /* YYMainTableHeaderView.xib */; };
+		DC6A851420D26D96004C43AC /* YYAirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */; };
+		DC6A851720D26EA5004C43AC /* YYWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */; };
 		DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */; };
 		DCDE58BD20D0CB9F00310A03 /* area.text in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BC20D0CB9F00310A03 /* area.text */; };
 		DCDE58BF20D0E87F00310A03 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BE20D0E87F00310A03 /* area.plist */; };
 		DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58D420D0F01700310A03 /* YYAreaModel.swift */; };
-		DCDE58E120D0FE3400310A03 /* Left.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58E020D0FE3400310A03 /* Left.storyboard */; };
-		DCDE58E320D0FE3D00310A03 /* Right.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58E220D0FE3D00310A03 /* Right.storyboard */; };
 		DCDE58E520D105B200310A03 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */; };
 		DCDE58E720D10AAE00310A03 /* ViewController+Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */; };
-		DCDE58F020D10C9600310A03 /* YYLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58ED20D10C9600310A03 /* YYLeftViewController.swift */; };
-		DCDE58F120D10C9600310A03 /* YYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58EE20D10C9600310A03 /* YYMainViewController.swift */; };
-		DCDE58F220D10C9600310A03 /* YYRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58EF20D10C9600310A03 /* YYRightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,33 +82,71 @@
 		DC2178D720CFBA2600A777A9 /* 24Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 24Hours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC2178DC20CFBA2600A777A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC2178DF20CFBA2600A777A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC2178E120CFBA2800A777A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC2178E420CFBA2800A777A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC2178E620CFBA2800A777A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2178EC20CFBB9600A777A9 /* 24Hours-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "24Hours-Bridging-Header.h"; sourceTree = "<group>"; };
-		DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherAPI.swift; sourceTree = "<group>"; };
-		DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
-		DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
-		DC7372B420D0ACAA003FFB79 /* GitHubUserContentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserContentAPI.swift; sourceTree = "<group>"; };
-		DC7372B520D0ACAA003FFB79 /* MoyaBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaBasicViewController.swift; sourceTree = "<group>"; };
-		DC7372B620D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaMultiTargetViewController.swift; sourceTree = "<group>"; };
-		DC7372B820D0ACAA003FFB79 /* YYBaseUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseUrl.swift; sourceTree = "<group>"; };
-		DC7372B920D0ACAA003FFB79 /* YYModel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYModel+Extension.swift"; sourceTree = "<group>"; };
-		DC7372BA20D0ACAA003FFB79 /* YYRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestManager.swift; sourceTree = "<group>"; };
-		DC7372BB20D0ACAA003FFB79 /* YYRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestModel.swift; sourceTree = "<group>"; };
-		DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYTargetType+Extension.swift"; sourceTree = "<group>"; };
+		DC44432220D9EFFC00FD9FA1 /* weatherList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = weatherList.plist; sourceTree = "<group>"; };
+		DC44432420D9F68000FD9FA1 /* YYWeatherListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherListModel.swift; sourceTree = "<group>"; };
+		DC44432D20DA3B9B00FD9FA1 /* YYLeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLeftViewController.swift; sourceTree = "<group>"; };
+		DC44432F20DA3BC700FD9FA1 /* YYLeftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYLeftTableViewCell.swift; sourceTree = "<group>"; };
+		DC44433020DA3BC700FD9FA1 /* YYLeftTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYLeftTableViewCell.xib; sourceTree = "<group>"; };
+		DC44433520DA3D2C00FD9FA1 /* YYRightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRightViewController.swift; sourceTree = "<group>"; };
+		DC44433720DA3D5A00FD9FA1 /* YYAirQualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAirQualityViewController.swift; sourceTree = "<group>"; };
+		DC44433820DA3D5A00FD9FA1 /* YYAirQualityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYAirQualityViewController.xib; sourceTree = "<group>"; };
+		DC44433B20DA437B00FD9FA1 /* airQualityList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = airQualityList.plist; sourceTree = "<group>"; };
+		DC44433D20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAirQualityAreaViewController.swift; sourceTree = "<group>"; };
+		DC44433E20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYAirQualityAreaViewController.xib; sourceTree = "<group>"; };
+		DC6A84A220D21388004C43AC /* YYBaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseCollectionViewController.swift; sourceTree = "<group>"; };
+		DC6A84A320D21388004C43AC /* YYBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseViewController.swift; sourceTree = "<group>"; };
+		DC6A84A920D21487004C43AC /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84AA20D21487004C43AC /* CGSize+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84AB20D21487004C43AC /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84AC20D21487004C43AC /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84AD20D21487004C43AC /* ScrollView+PlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollView+PlaceHolder.swift"; sourceTree = "<group>"; };
+		DC6A84AE20D21487004C43AC /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84AF20D21487004C43AC /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84B020D21487004C43AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84B120D21487004C43AC /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84B220D21487004C43AC /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84B320D21487004C43AC /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84B420D21487004C43AC /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		DC6A84B520D21487004C43AC /* UIView+Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Gesture.swift"; sourceTree = "<group>"; };
+		DC6A84B620D21487004C43AC /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		DC6A84B720D21487004C43AC /* UIView+LoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LoadView.swift"; sourceTree = "<group>"; };
+		DC6A84B820D21487004C43AC /* UIView+Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shot.swift"; sourceTree = "<group>"; };
+		DC6A84B920D21487004C43AC /* UIView+XIB_Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIB_Layer.swift"; sourceTree = "<group>"; };
+		DC6A84CF20D24374004C43AC /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84D520D243F2004C43AC /* YYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMainViewController.swift; sourceTree = "<group>"; };
+		DC6A84D720D243F2004C43AC /* YYMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC6A84D820D243F2004C43AC /* YYMainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC6A84D920D243F2004C43AC /* YYMainFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMainFlowLayout.swift; sourceTree = "<group>"; };
+		DC6A84E420D244F0004C43AC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC6A84E520D244F0004C43AC /* Left.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Left.storyboard; sourceTree = "<group>"; };
+		DC6A84E620D244F0004C43AC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DC6A84E720D244F0004C43AC /* Right.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Right.storyboard; sourceTree = "<group>"; };
+		DC6A84ED20D24583004C43AC /* YYMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMainTableViewCell.swift; sourceTree = "<group>"; };
+		DC6A84EE20D24583004C43AC /* YYMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYMainTableViewCell.xib; sourceTree = "<group>"; };
+		DC6A84F520D2483B004C43AC /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
+		DC6A84F620D2483B004C43AC /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		DC6A84F720D2483B004C43AC /* GitHubUserContentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserContentAPI.swift; sourceTree = "<group>"; };
+		DC6A84F820D2483B004C43AC /* MoyaBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaBasicViewController.swift; sourceTree = "<group>"; };
+		DC6A84F920D2483B004C43AC /* MoyaMultiTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaMultiTargetViewController.swift; sourceTree = "<group>"; };
+		DC6A84FB20D2483B004C43AC /* YYBaseUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseUrl.swift; sourceTree = "<group>"; };
+		DC6A84FC20D2483B004C43AC /* YYModel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYModel+Extension.swift"; sourceTree = "<group>"; };
+		DC6A84FD20D2483B004C43AC /* YYRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestManager.swift; sourceTree = "<group>"; };
+		DC6A84FE20D2483B004C43AC /* YYRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestModel.swift; sourceTree = "<group>"; };
+		DC6A84FF20D2483B004C43AC /* YYTargetType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYTargetType+Extension.swift"; sourceTree = "<group>"; };
+		DC6A850C20D24843004C43AC /* YYOnePixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYOnePixView.swift; sourceTree = "<group>"; };
+		DC6A850E20D24A42004C43AC /* YYMainTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMainTableHeaderView.swift; sourceTree = "<group>"; };
+		DC6A851020D24A4D004C43AC /* YYMainTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYMainTableHeaderView.xib; sourceTree = "<group>"; };
+		DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAirQualityModel.swift; sourceTree = "<group>"; };
+		DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWeatherAPI.swift; sourceTree = "<group>"; };
 		DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherModel.swift; sourceTree = "<group>"; };
 		DCDE58BC20D0CB9F00310A03 /* area.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = area.text; sourceTree = "<group>"; };
 		DCDE58BE20D0E87F00310A03 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		DCDE58D420D0F01700310A03 /* YYAreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAreaModel.swift; sourceTree = "<group>"; };
-		DCDE58E020D0FE3400310A03 /* Left.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Left.storyboard; sourceTree = "<group>"; };
-		DCDE58E220D0FE3D00310A03 /* Right.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Right.storyboard; sourceTree = "<group>"; };
 		DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Slide.swift"; sourceTree = "<group>"; };
-		DCDE58ED20D10C9600310A03 /* YYLeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLeftViewController.swift; sourceTree = "<group>"; };
-		DCDE58EE20D10C9600310A03 /* YYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMainViewController.swift; sourceTree = "<group>"; };
-		DCDE58EF20D10C9600310A03 /* YYRightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,69 +191,283 @@
 		DC2178D920CFBA2600A777A9 /* 24Hours */ = {
 			isa = PBXGroup;
 			children = (
-				DC2178F420CFC13C00A777A9 /* YYRequest */,
-				DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */,
-				DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */,
-				DC2178DC20CFBA2600A777A9 /* ViewController.swift */,
-				DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */,
-				DCDE58EC20D10C9600310A03 /* Main */,
-				DCDE58BC20D0CB9F00310A03 /* area.text */,
-				DCDE58BE20D0E87F00310A03 /* area.plist */,
-				DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */,
-				DCDE58D420D0F01700310A03 /* YYAreaModel.swift */,
-				DC2178DE20CFBA2600A777A9 /* Main.storyboard */,
-				DCDE58E020D0FE3400310A03 /* Left.storyboard */,
-				DCDE58E220D0FE3D00310A03 /* Right.storyboard */,
+				DC6A84F120D2483B004C43AC /* PUBLIC */,
+				DC6A84F220D2483B004C43AC /* TOOL */,
+				DC6A84EC20D24533004C43AC /* Other */,
+				DC6A84A820D21487004C43AC /* Extension */,
+				DC6A84DE20D24421004C43AC /* 24Hours+Extension */,
+				DC6A84A120D21388004C43AC /* Base */,
+				DCDE58EC20D10C9600310A03 /* CLASS */,
+				DC6A84D320D243F2004C43AC /* Source */,
+				DC6A84E320D244F0004C43AC /* Storyboard */,
 				DC2178E120CFBA2800A777A9 /* Assets.xcassets */,
-				DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */,
 				DC2178E620CFBA2800A777A9 /* Info.plist */,
 				DC2178EC20CFBB9600A777A9 /* 24Hours-Bridging-Header.h */,
 			);
 			path = 24Hours;
 			sourceTree = "<group>";
 		};
-		DC2178F420CFC13C00A777A9 /* YYRequest */ = {
+		DC44432620DA3B7000FD9FA1 /* Left */ = {
 			isa = PBXGroup;
 			children = (
-				DC7372B120D0ACAA003FFB79 /* MoyaDemo */,
-				DC7372B720D0ACAA003FFB79 /* YYRequest1.0 */,
-				DC7372AF20D0A5B9003FFB79 /* YYWeatherAPI.swift */,
+				DC44432A20DA3B9B00FD9FA1 /* Model */,
+				DC44432920DA3B9B00FD9FA1 /* Other */,
+				DC44432C20DA3B9B00FD9FA1 /* VC */,
+				DC44432B20DA3B9B00FD9FA1 /* View */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		DC44432920DA3B9B00FD9FA1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DC44432A20DA3B9B00FD9FA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC44432B20DA3B9B00FD9FA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC44432F20DA3BC700FD9FA1 /* YYLeftTableViewCell.swift */,
+				DC44433020DA3BC700FD9FA1 /* YYLeftTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC44432C20DA3B9B00FD9FA1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DC44432D20DA3B9B00FD9FA1 /* YYLeftViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DC44433320DA3D2C00FD9FA1 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DC44433D20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift */,
+				DC44433E20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib */,
+				DC44433720DA3D5A00FD9FA1 /* YYAirQualityViewController.swift */,
+				DC44433820DA3D5A00FD9FA1 /* YYAirQualityViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		DC44433420DA3D2C00FD9FA1 /* Right */ = {
+			isa = PBXGroup;
+			children = (
+				DC44433520DA3D2C00FD9FA1 /* YYRightViewController.swift */,
+			);
+			path = Right;
+			sourceTree = "<group>";
+		};
+		DC6A84A120D21388004C43AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A84A220D21388004C43AC /* YYBaseCollectionViewController.swift */,
+				DC6A84A320D21388004C43AC /* YYBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DC6A84A820D21487004C43AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A84A920D21487004C43AC /* Array+Extension.swift */,
+				DC6A84AA20D21487004C43AC /* CGSize+Extension.swift */,
+				DC6A84AB20D21487004C43AC /* Int+Extension.swift */,
+				DC6A84AC20D21487004C43AC /* NSObject+Extension.swift */,
+				DC6A84AD20D21487004C43AC /* ScrollView+PlaceHolder.swift */,
+				DC6A84AE20D21487004C43AC /* String+Extension.swift */,
+				DC6A84AF20D21487004C43AC /* UICollectionView+Extension.swift */,
+				DC6A84B020D21487004C43AC /* UIColor+Extension.swift */,
+				DC6A84B120D21487004C43AC /* UIDevice+Extension.swift */,
+				DC6A84B220D21487004C43AC /* UIImage+Extension.swift */,
+				DC6A84B320D21487004C43AC /* UIImageView+Extension.swift */,
+				DC6A84B420D21487004C43AC /* UIView+Frame.swift */,
+				DC6A84B520D21487004C43AC /* UIView+Gesture.swift */,
+				DC6A84B620D21487004C43AC /* UIView+Layout.swift */,
+				DC6A84B720D21487004C43AC /* UIView+LoadView.swift */,
+				DC6A84B820D21487004C43AC /* UIView+Shot.swift */,
+				DC6A84B920D21487004C43AC /* UIView+XIB_Layer.swift */,
+				DC6A84CF20D24374004C43AC /* UITableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DC6A84D120D243F2004C43AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A851220D24A70004C43AC /* Ohter */,
+				DC6A84DF20D24475004C43AC /* Storyboard */,
+				DC6A84D220D243F2004C43AC /* Model */,
+				DC6A84D420D243F2004C43AC /* VC */,
+				DC6A84D620D243F2004C43AC /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DC6A84D220D243F2004C43AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE58D420D0F01700310A03 /* YYAreaModel.swift */,
+				DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */,
+				DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */,
+				DC44432420D9F68000FD9FA1 /* YYWeatherListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC6A84D320D243F2004C43AC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE58BC20D0CB9F00310A03 /* area.text */,
+				DCDE58BE20D0E87F00310A03 /* area.plist */,
+				DC44432220D9EFFC00FD9FA1 /* weatherList.plist */,
+				DC44433B20DA437B00FD9FA1 /* airQualityList.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DC6A84D420D243F2004C43AC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A84D520D243F2004C43AC /* YYMainViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DC6A84D620D243F2004C43AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A84D720D243F2004C43AC /* YYMainCollectionViewCell.swift */,
+				DC6A84D820D243F2004C43AC /* YYMainCollectionViewCell.xib */,
+				DC6A84ED20D24583004C43AC /* YYMainTableViewCell.swift */,
+				DC6A84EE20D24583004C43AC /* YYMainTableViewCell.xib */,
+				DC6A850E20D24A42004C43AC /* YYMainTableHeaderView.swift */,
+				DC6A851020D24A4D004C43AC /* YYMainTableHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC6A84DE20D24421004C43AC /* 24Hours+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */,
+			);
+			path = "24Hours+Extension";
+			sourceTree = "<group>";
+		};
+		DC6A84DF20D24475004C43AC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DC6A84E320D244F0004C43AC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A84E420D244F0004C43AC /* LaunchScreen.storyboard */,
+				DC6A84E520D244F0004C43AC /* Left.storyboard */,
+				DC6A84E620D244F0004C43AC /* Main.storyboard */,
+				DC6A84E720D244F0004C43AC /* Right.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DC6A84EC20D24533004C43AC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC2178DA20CFBA2600A777A9 /* AppDelegate.swift */,
+				DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */,
+				DC2178DC20CFBA2600A777A9 /* ViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DC6A84F120D2483B004C43AC /* PUBLIC */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A850C20D24843004C43AC /* YYOnePixView.swift */,
+			);
+			path = PUBLIC;
+			sourceTree = "<group>";
+		};
+		DC6A84F220D2483B004C43AC /* TOOL */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A84F320D2483B004C43AC /* YYRequest */,
+			);
+			path = TOOL;
+			sourceTree = "<group>";
+		};
+		DC6A84F320D2483B004C43AC /* YYRequest */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A851520D26EA5004C43AC /* YY24HoursRquest */,
+				DC6A84F420D2483B004C43AC /* MoyaDemo */,
+				DC6A84FA20D2483B004C43AC /* YYRequest1.0 */,
 			);
 			path = YYRequest;
 			sourceTree = "<group>";
 		};
-		DC7372B120D0ACAA003FFB79 /* MoyaDemo */ = {
+		DC6A84F420D2483B004C43AC /* MoyaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DC7372B220D0ACAA003FFB79 /* GiphyAPI.swift */,
-				DC7372B320D0ACAA003FFB79 /* GitHubAPI.swift */,
-				DC7372B420D0ACAA003FFB79 /* GitHubUserContentAPI.swift */,
-				DC7372B520D0ACAA003FFB79 /* MoyaBasicViewController.swift */,
-				DC7372B620D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift */,
+				DC6A84F520D2483B004C43AC /* GiphyAPI.swift */,
+				DC6A84F620D2483B004C43AC /* GitHubAPI.swift */,
+				DC6A84F720D2483B004C43AC /* GitHubUserContentAPI.swift */,
+				DC6A84F820D2483B004C43AC /* MoyaBasicViewController.swift */,
+				DC6A84F920D2483B004C43AC /* MoyaMultiTargetViewController.swift */,
 			);
 			path = MoyaDemo;
 			sourceTree = "<group>";
 		};
-		DC7372B720D0ACAA003FFB79 /* YYRequest1.0 */ = {
+		DC6A84FA20D2483B004C43AC /* YYRequest1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				DC7372B820D0ACAA003FFB79 /* YYBaseUrl.swift */,
-				DC7372B920D0ACAA003FFB79 /* YYModel+Extension.swift */,
-				DC7372BA20D0ACAA003FFB79 /* YYRequestManager.swift */,
-				DC7372BB20D0ACAA003FFB79 /* YYRequestModel.swift */,
-				DC7372BC20D0ACAA003FFB79 /* YYTargetType+Extension.swift */,
+				DC6A84FB20D2483B004C43AC /* YYBaseUrl.swift */,
+				DC6A84FC20D2483B004C43AC /* YYModel+Extension.swift */,
+				DC6A84FD20D2483B004C43AC /* YYRequestManager.swift */,
+				DC6A84FE20D2483B004C43AC /* YYRequestModel.swift */,
+				DC6A84FF20D2483B004C43AC /* YYTargetType+Extension.swift */,
 			);
 			path = YYRequest1.0;
 			sourceTree = "<group>";
 		};
-		DCDE58EC20D10C9600310A03 /* Main */ = {
+		DC6A851220D24A70004C43AC /* Ohter */ = {
 			isa = PBXGroup;
 			children = (
-				DCDE58ED20D10C9600310A03 /* YYLeftViewController.swift */,
-				DCDE58EE20D10C9600310A03 /* YYMainViewController.swift */,
-				DCDE58EF20D10C9600310A03 /* YYRightViewController.swift */,
+				DC6A84D920D243F2004C43AC /* YYMainFlowLayout.swift */,
 			);
-			path = Main;
+			path = Ohter;
+			sourceTree = "<group>";
+		};
+		DC6A851520D26EA5004C43AC /* YY24HoursRquest */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */,
+			);
+			path = YY24HoursRquest;
+			sourceTree = "<group>";
+		};
+		DCDE58EC20D10C9600310A03 /* CLASS */ = {
+			isa = PBXGroup;
+			children = (
+				DC44433320DA3D2C00FD9FA1 /* Details */,
+				DC44433420DA3D2C00FD9FA1 /* Right */,
+				DC44432620DA3B7000FD9FA1 /* Left */,
+				DC6A84D120D243F2004C43AC /* Main */,
+			);
+			path = CLASS;
 			sourceTree = "<group>";
 		};
 		F9D66E0AF5AB46D2F63D4C5A /* Frameworks */ = {
@@ -249,12 +539,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2178E520CFBA2800A777A9 /* LaunchScreen.storyboard in Resources */,
-				DCDE58E120D0FE3400310A03 /* Left.storyboard in Resources */,
+				DC6A84EA20D244F1004C43AC /* Main.storyboard in Resources */,
 				DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */,
+				DC6A84DC20D243F2004C43AC /* YYMainCollectionViewCell.xib in Resources */,
+				DC44432320D9EFFC00FD9FA1 /* weatherList.plist in Resources */,
 				DCDE58BD20D0CB9F00310A03 /* area.text in Resources */,
-				DCDE58E320D0FE3D00310A03 /* Right.storyboard in Resources */,
-				DC2178E020CFBA2600A777A9 /* Main.storyboard in Resources */,
+				DC44433C20DA437B00FD9FA1 /* airQualityList.plist in Resources */,
+				DC44434020DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib in Resources */,
+				DC44433A20DA3D5A00FD9FA1 /* YYAirQualityViewController.xib in Resources */,
+				DC6A84E920D244F1004C43AC /* Left.storyboard in Resources */,
+				DC6A84EB20D244F1004C43AC /* Right.storyboard in Resources */,
+				DC6A84F020D24583004C43AC /* YYMainTableViewCell.xib in Resources */,
+				DC44433220DA3BC700FD9FA1 /* YYLeftTableViewCell.xib in Resources */,
+				DC6A851120D24A4D004C43AC /* YYMainTableHeaderView.xib in Resources */,
+				DC6A84E820D244F1004C43AC /* LaunchScreen.storyboard in Resources */,
 				DCDE58BF20D0E87F00310A03 /* area.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +568,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-24Hours/Pods-24Hours-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
@@ -277,11 +576,13 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
@@ -289,6 +590,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,49 +623,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDE58F120D10C9600310A03 /* YYMainViewController.swift in Sources */,
-				DC7372C620D0ACAA003FFB79 /* YYTargetType+Extension.swift in Sources */,
-				DC7372BE20D0ACAA003FFB79 /* GitHubAPI.swift in Sources */,
-				DC7372C320D0ACAA003FFB79 /* YYModel+Extension.swift in Sources */,
-				DC7372C220D0ACAA003FFB79 /* YYBaseUrl.swift in Sources */,
+				DC6A851420D26D96004C43AC /* YYAirQualityModel.swift in Sources */,
+				DC6A850A20D2483C004C43AC /* YYTargetType+Extension.swift in Sources */,
+				DC6A84C020D21487004C43AC /* UICollectionView+Extension.swift in Sources */,
+				DC6A850220D2483C004C43AC /* GitHubAPI.swift in Sources */,
+				DC6A84BB20D21487004C43AC /* CGSize+Extension.swift in Sources */,
+				DC6A850520D2483C004C43AC /* MoyaMultiTargetViewController.swift in Sources */,
+				DC44433F20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift in Sources */,
+				DC6A84C120D21487004C43AC /* UIColor+Extension.swift in Sources */,
+				DC6A84C320D21487004C43AC /* UIImage+Extension.swift in Sources */,
+				DC6A84C220D21487004C43AC /* UIDevice+Extension.swift in Sources */,
+				DC44432520D9F68000FD9FA1 /* YYWeatherListModel.swift in Sources */,
+				DC6A851720D26EA5004C43AC /* YYWeatherAPI.swift in Sources */,
+				DC6A84C520D21487004C43AC /* UIView+Frame.swift in Sources */,
 				DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */,
-				DC7372BF20D0ACAA003FFB79 /* GitHubUserContentAPI.swift in Sources */,
-				DC7372C520D0ACAA003FFB79 /* YYRequestModel.swift in Sources */,
+				DC44432E20DA3B9B00FD9FA1 /* YYLeftViewController.swift in Sources */,
+				DC6A84DA20D243F2004C43AC /* YYMainViewController.swift in Sources */,
+				DC6A84C820D21487004C43AC /* UIView+LoadView.swift in Sources */,
+				DC6A84A520D21389004C43AC /* YYBaseViewController.swift in Sources */,
+				DC6A84BD20D21487004C43AC /* NSObject+Extension.swift in Sources */,
 				DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */,
 				DC2178DD20CFBA2600A777A9 /* ViewController.swift in Sources */,
-				DC7372C120D0ACAA003FFB79 /* MoyaMultiTargetViewController.swift in Sources */,
+				DC6A84CA20D21487004C43AC /* UIView+XIB_Layer.swift in Sources */,
+				DC44433620DA3D2C00FD9FA1 /* YYRightViewController.swift in Sources */,
+				DC6A84C920D21487004C43AC /* UIView+Shot.swift in Sources */,
+				DC6A84DD20D243F2004C43AC /* YYMainFlowLayout.swift in Sources */,
+				DC6A84D020D24375004C43AC /* UITableView+Extension.swift in Sources */,
+				DC6A850120D2483C004C43AC /* GiphyAPI.swift in Sources */,
+				DC6A84BE20D21487004C43AC /* ScrollView+PlaceHolder.swift in Sources */,
+				DC6A850720D2483C004C43AC /* YYModel+Extension.swift in Sources */,
 				DCDE58E520D105B200310A03 /* AppDelegate+Extension.swift in Sources */,
-				DC7372B020D0A5B9003FFB79 /* YYWeatherAPI.swift in Sources */,
+				DC6A84DB20D243F2004C43AC /* YYMainCollectionViewCell.swift in Sources */,
+				DC6A850D20D24843004C43AC /* YYOnePixView.swift in Sources */,
+				DC6A84BA20D21487004C43AC /* Array+Extension.swift in Sources */,
 				DC2178DB20CFBA2600A777A9 /* AppDelegate.swift in Sources */,
-				DC7372BD20D0ACAA003FFB79 /* GiphyAPI.swift in Sources */,
-				DC7372C020D0ACAA003FFB79 /* MoyaBasicViewController.swift in Sources */,
+				DC6A84A420D21389004C43AC /* YYBaseCollectionViewController.swift in Sources */,
+				DC44433920DA3D5A00FD9FA1 /* YYAirQualityViewController.swift in Sources */,
+				DC6A84BC20D21487004C43AC /* Int+Extension.swift in Sources */,
 				DCDE58E720D10AAE00310A03 /* ViewController+Slide.swift in Sources */,
-				DCDE58F220D10C9600310A03 /* YYRightViewController.swift in Sources */,
-				DC7372C420D0ACAA003FFB79 /* YYRequestManager.swift in Sources */,
-				DCDE58F020D10C9600310A03 /* YYLeftViewController.swift in Sources */,
+				DC6A850F20D24A42004C43AC /* YYMainTableHeaderView.swift in Sources */,
+				DC44433120DA3BC700FD9FA1 /* YYLeftTableViewCell.swift in Sources */,
+				DC6A84EF20D24583004C43AC /* YYMainTableViewCell.swift in Sources */,
+				DC6A84C620D21487004C43AC /* UIView+Gesture.swift in Sources */,
+				DC6A850620D2483C004C43AC /* YYBaseUrl.swift in Sources */,
+				DC6A850320D2483C004C43AC /* GitHubUserContentAPI.swift in Sources */,
+				DC6A84BF20D21487004C43AC /* String+Extension.swift in Sources */,
+				DC6A84C420D21487004C43AC /* UIImageView+Extension.swift in Sources */,
+				DC6A84C720D21487004C43AC /* UIView+Layout.swift in Sources */,
+				DC6A850420D2483C004C43AC /* MoyaBasicViewController.swift in Sources */,
+				DC6A850920D2483C004C43AC /* YYRequestModel.swift in Sources */,
+				DC6A850820D2483C004C43AC /* YYRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DC2178DE20CFBA2600A777A9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC2178DF20CFBA2600A777A9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DC2178E320CFBA2800A777A9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC2178E420CFBA2800A777A9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DC2178E720CFBA2800A777A9 /* Debug */ = {
@@ -489,7 +802,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M64M9WGH3L;
 				INFOPLIST_FILE = 24Hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.24hours.jianan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "24Hours/24Hours-Bridging-Header.h";
@@ -508,7 +824,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M64M9WGH3L;
 				INFOPLIST_FILE = 24Hours/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.24hours.jianan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "24Hours/24Hours-Bridging-Header.h";

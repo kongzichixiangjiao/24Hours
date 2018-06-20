@@ -15,5 +15,11 @@ target '24Hours' do
  pod 'Moya'
  
  pod 'SlideMenuControllerSwift'
+ 
  pod 'SwiftDate'
+ 
+ pod 'SnapKit'
+ 
+ pod 'DGElasticPullToRefresh'
 end
+
