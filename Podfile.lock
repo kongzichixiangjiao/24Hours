@@ -13,6 +13,11 @@ PODS:
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - PKHUD (5.0.0)
+  - Realm (3.4.0):
+    - Realm/Headers (= 3.4.0)
+  - Realm/Headers (3.4.0)
+  - RealmSwift (3.4.0):
+    - Realm (= 3.4.0)
   - Result (3.2.4)
   - RxSwift (4.1.2)
   - SCLAlertView (0.8)
@@ -27,6 +32,7 @@ DEPENDENCIES:
   - HandyJSON
   - Moya
   - PKHUD (~> 5.0)
+  - RealmSwift
   - RxSwift
   - SCLAlertView
   - SlideMenuControllerSwift
@@ -43,6 +49,8 @@ SPEC REPOS:
     - HandyJSON
     - Moya
     - PKHUD
+    - Realm
+    - RealmSwift
     - Result
     - RxSwift
     - SCLAlertView
@@ -59,6 +67,8 @@ SPEC CHECKSUMS:
   HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  Realm: 9527c7baa2260f3a3aad6823d2d71cafff9b046b
+  RealmSwift: f40a747beaea1cadde7dcef41ee5a34b3001677b
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
@@ -66,6 +76,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: af0ca380bd9b1fded6f22ff62c1ba13a53443883
+PODFILE CHECKSUM: c5b11689e789e56dab572cfd4af91d78bea171cc
 
 COCOAPODS: 1.5.3

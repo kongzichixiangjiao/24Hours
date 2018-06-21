@@ -68,11 +68,15 @@
 		DC6A851420D26D96004C43AC /* YYAirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */; };
 		DC6A851720D26EA5004C43AC /* YYWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */; };
 		DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */; };
+		DC9BD15B20DB383300B94ECB /* YYSearchDressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9BD15A20DB383300B94ECB /* YYSearchDressModel.swift */; };
 		DCDE58BD20D0CB9F00310A03 /* area.text in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BC20D0CB9F00310A03 /* area.text */; };
 		DCDE58BF20D0E87F00310A03 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BE20D0E87F00310A03 /* area.plist */; };
 		DCDE58D520D0F01700310A03 /* YYAreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58D420D0F01700310A03 /* YYAreaModel.swift */; };
 		DCDE58E520D105B200310A03 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */; };
 		DCDE58E720D10AAE00310A03 /* ViewController+Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */; };
+		DCF531E420DB451B00A81296 /* YYRightSeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF531E320DB451B00A81296 /* YYRightSeachView.swift */; };
+		DCF531E620DB452500A81296 /* YYRightSeachView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF531E520DB452500A81296 /* YYRightSeachView.xib */; };
+		DCF531E820DB491E00A81296 /* GARegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF531E720DB491E00A81296 /* GARegular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,11 +146,15 @@
 		DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAirQualityModel.swift; sourceTree = "<group>"; };
 		DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWeatherAPI.swift; sourceTree = "<group>"; };
 		DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherModel.swift; sourceTree = "<group>"; };
+		DC9BD15A20DB383300B94ECB /* YYSearchDressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSearchDressModel.swift; sourceTree = "<group>"; };
 		DCDE58BC20D0CB9F00310A03 /* area.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = area.text; sourceTree = "<group>"; };
 		DCDE58BE20D0E87F00310A03 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		DCDE58D420D0F01700310A03 /* YYAreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAreaModel.swift; sourceTree = "<group>"; };
 		DCDE58E420D105B200310A03 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		DCDE58E620D10AAD00310A03 /* ViewController+Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Slide.swift"; sourceTree = "<group>"; };
+		DCF531E320DB451B00A81296 /* YYRightSeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYRightSeachView.swift; sourceTree = "<group>"; };
+		DCF531E520DB452500A81296 /* YYRightSeachView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYRightSeachView.xib; sourceTree = "<group>"; };
+		DCF531E720DB491E00A81296 /* GARegular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GARegular.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +272,9 @@
 			isa = PBXGroup;
 			children = (
 				DC44433520DA3D2C00FD9FA1 /* YYRightViewController.swift */,
+				DC9BD15A20DB383300B94ECB /* YYSearchDressModel.swift */,
+				DCF531E320DB451B00A81296 /* YYRightSeachView.swift */,
+				DCF531E520DB452500A81296 /* YYRightSeachView.xib */,
 			);
 			path = Right;
 			sourceTree = "<group>";
@@ -404,6 +415,7 @@
 		DC6A84F220D2483B004C43AC /* TOOL */ = {
 			isa = PBXGroup;
 			children = (
+				DCF531E720DB491E00A81296 /* GARegular.swift */,
 				DC6A84F320D2483B004C43AC /* YYRequest */,
 			);
 			path = TOOL;
@@ -543,6 +555,7 @@
 				DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */,
 				DC6A84DC20D243F2004C43AC /* YYMainCollectionViewCell.xib in Resources */,
 				DC44432320D9EFFC00FD9FA1 /* weatherList.plist in Resources */,
+				DCF531E620DB452500A81296 /* YYRightSeachView.xib in Resources */,
 				DCDE58BD20D0CB9F00310A03 /* area.text in Resources */,
 				DC44433C20DA437B00FD9FA1 /* airQualityList.plist in Resources */,
 				DC44434020DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib in Resources */,
@@ -572,6 +585,8 @@
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
@@ -586,6 +601,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
@@ -662,6 +679,9 @@
 				DC6A84BC20D21487004C43AC /* Int+Extension.swift in Sources */,
 				DCDE58E720D10AAE00310A03 /* ViewController+Slide.swift in Sources */,
 				DC6A850F20D24A42004C43AC /* YYMainTableHeaderView.swift in Sources */,
+				DC9BD15B20DB383300B94ECB /* YYSearchDressModel.swift in Sources */,
+				DCF531E420DB451B00A81296 /* YYRightSeachView.swift in Sources */,
+				DCF531E820DB491E00A81296 /* GARegular.swift in Sources */,
 				DC44433120DA3BC700FD9FA1 /* YYLeftTableViewCell.swift in Sources */,
 				DC6A84EF20D24583004C43AC /* YYMainTableViewCell.swift in Sources */,
 				DC6A84C620D21487004C43AC /* UIView+Gesture.swift in Sources */,
