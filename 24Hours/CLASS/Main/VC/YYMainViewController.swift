@@ -11,7 +11,8 @@ import Moya
 import PKHUD
 import SwiftDate
 import DGElasticPullToRefresh
-
+import RealmSwift
+import CoreTelephony
 class YYMainViewController: YYBaseCollectionViewController {
     
     private let locationManager = AMapLocationManager()
@@ -25,12 +26,21 @@ class YYMainViewController: YYBaseCollectionViewController {
         
         gd_configLocationManager()
         initViews()
+        
     }
     
+    
     func initViews() {
+        collectionView.emptyDelegate = self
         collectionView.isPagingEnabled = true
         collectionView.backgroundColor = "00AAFF".color0X
         collectionView.yy_register(nibName: YYMainCollectionViewCell.identifier)
+        
+        let nav = YYMainNavigationView.ga_loadView() as!  YYMainNavigationView
+        nav.frame = CGRect(x: 0, y: 0, width: self.view.width, height: 64)
+        nav.delegate = self
+        self.view.addSubview(nav)
+        
     }
     
     func gd_configLocationManager() {
@@ -41,8 +51,13 @@ class YYMainViewController: YYBaseCollectionViewController {
         
         if (locationManager.requestLocation(withReGeocode: true, completionBlock: { [weak self] (location: CLLocation?, reGeocode: AMapLocationReGeocode?, error: Error?) in
             if let weakSelf = self {
+                
+                let model = YYAMapLocationModel()
+                
                 if let error = error {
                     let error = error as NSError
+                    
+                    model.error_code = error.code
                     
                     if error.code == AMapLocationErrorCode.locateFailed.rawValue {
                         //定位错误：此时location和regeocode没有返回值，不进行annotation的添加
@@ -71,6 +86,8 @@ class YYMainViewController: YYBaseCollectionViewController {
                     HUD.show(.label("\(location.coordinate)"))
                     // 39.904173990885418 116.50982991536458
                     weakSelf.pk_hud(text: "\(location.coordinate)")
+                    
+                    model.locationCoordinate = "\(location.coordinate)"
                 }
                 
                 if let reGeocode = reGeocode {
@@ -81,27 +98,65 @@ class YYMainViewController: YYBaseCollectionViewController {
                     } else {
                         weakSelf.locationString = reGeocode.district + "," + reGeocode.city.cutShengShi + "," + reGeocode.province.cutShengShi
                     }
+                    model.formattedAddress = reGeocode.formattedAddress
+                    model.country = reGeocode.country
+                    model.province = reGeocode.province
+                    model.city = reGeocode.city
+                    model.district = reGeocode.district
+                    model.citycode = reGeocode.citycode
+                    model.adcode = reGeocode.adcode
+                    model.street = reGeocode.street
+                    model.number = reGeocode.number
                     
-                    
-                    weakSelf.requestWeatherData(location: weakSelf.locationString)
-                    weakSelf.requestAirQualtyData(location: weakSelf.locationString)
                     weakSelf.requestAll(location: weakSelf.locationString)
                 }
+
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.add(model)
+                }
+                
+                print(realm.objects(YYAMapLocationModel.self))
             }
         })) {
             
         } else {
             pk_hud_error(text: "定位错误")
         }
-        
-//        requestAll(location: "北京市")
     }
     
     func requestAll(location: String) {
         locationString = location
         requestWeatherData(location: location)
-        requestAirQualtyData(location: location)
         self.collectionView.contentOffset = CGPoint.zero
+        requestDress(location: location)
+    }
+    
+    func requestDress(location: String) {
+        HUD.show(.progress)
+        weatherProvider.request(MultiTarget(WeatherAPI.dress(location: location))) { (result) in
+            switch result {
+            case .success:
+                do {
+                    let response = try result.dematerialize()
+                    let value = try response.mapJSON() as! [String:Any]
+                    let heWeather6 = value["HeWeather6"] as! [[String:Any]]
+                    guard let model = YYLocationModel.deserialize(from: heWeather6.first!["basic"] as? [String : Any]) else {
+                        return
+                    }
+                    
+                    self.requestAirQualtyData(location: model.parent_city)
+                } catch {
+                    HUD.flash(.label("天气预报被海水冲走了"), delay: 0.8)
+                }
+                break
+            case .failure:
+                HUD.flash(.label("天气预报被海水冲走了"), delay: 0.8)
+                break
+            }
+            self.collectionView.yy_reloadData()
+            HUD.hide(animated: true)
+        }
     }
     
     func requestWeatherData(location: String) {
@@ -113,15 +168,19 @@ class YYMainViewController: YYBaseCollectionViewController {
                     let response = try result.dematerialize()
                     let value = try response.mapJSON()
                     self.weatherModel = YYHeWeather6Model.deserialize(from: value as? [String : Any])
+                    if (self.weatherModel?.HeWeather6.first?.status != "ok") {
+                        HUD.flash(.labeledError(title: "出错了", subtitle: "地址出错了"), delay: 1)
+                        self.slideMenuController()?.openRight()
+                    }
                 } catch {
-                    HUD.flash(.label("天气预报被海水冲走了"), delay: 0.8)
+                    HUD.flash(.label("天气预报被海水冲走了"), delay: 0.4)
                 }
                 break
             case .failure:
-                HUD.flash(.label("天气预报被海水冲走了"), delay: 0.8)
+                HUD.flash(.label("天气预报被海水冲走了"), delay: 0.4)
                 break
             }
-            self.collectionView.reloadData()
+            self.collectionView.yy_reloadData()
             HUD.hide(animated: true)
         }
     }
@@ -145,9 +204,13 @@ class YYMainViewController: YYBaseCollectionViewController {
                 HUD.flash(.label("天气预报被海水冲走了"), delay: 0.8)
                 break
             }
-            self.collectionView.reloadData()
+            self.collectionView.yy_reloadData()
             HUD.hide(animated: true)
         }
+    }
+    
+    @objc func clickedPlaceHolder() {
+        self.slideMenuController()?.openRight()
     }
     
     override func didReceiveMemoryWarning() {
@@ -180,10 +243,49 @@ extension YYMainViewController {
         }
         return model.daily_forecast!.count
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.x + 80 < 0) {
+            self.slideMenuController()?.openLeft()
+        }
+    }
 }
 
 extension YYMainViewController: YYMainCollectionViewCellRefreshDelegate {
     func mainCollectionViewCellRefresh() {
         self.requestWeatherData(location: locationString)
+    }
+}
+
+extension YYMainViewController: UICollectionViewPlaceHolderDelegate {
+    
+    func collectionViewPlaceHolderView() -> UIView {
+        let v = UIButton()
+        v.frame = CGRect(x: 0, y: 0, width: collectionView.width, height: 100)
+        v.center = collectionView.center
+        v.setTitle("地址飞走了，请重新选择", for: .normal)
+        v.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        v.addTarget(self, action: #selector(clickedPlaceHolder), for: .touchUpInside)
+        return v
+    }
+    
+    func collectionViewEnableScrollWhenPlaceHolderViewShowing() -> Bool {
+        return false
+    }
+}
+
+extension YYMainViewController: YYMainNavigationViewDelegate {
+    func mainNavigationViewClickRightButton() {
+        let rightStoryboard = UIStoryboard(name: "Right", bundle: nil)
+        let vc = rightStoryboard.instantiateInitialViewController() as! YYRightViewController
+        vc.delegate = self 
+        present(vc, animated: true, completion: nil)
+    }
+    
+}
+
+extension YYMainViewController: YYRightViewControllerDelegate {
+    func didSelectRow(model: YYSearchDressModel) {
+        requestAll(location: model.dress)
     }
 }

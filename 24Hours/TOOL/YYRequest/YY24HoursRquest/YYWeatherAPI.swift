@@ -22,6 +22,7 @@ private extension String {
 enum WeatherAPI {
     case weathers(location: String)
     case airQuality(location: String)
+    case dress(location: String)
 }
 
 extension WeatherAPI: TargetType {
@@ -35,6 +36,8 @@ extension WeatherAPI: TargetType {
             return "/s6/weather/forecast"
         case .airQuality:
             return "/s6/air/now"
+        case .dress:
+            return "/s6/search"
         }
     }
     
@@ -43,6 +46,8 @@ extension WeatherAPI: TargetType {
         case .weathers:
             return .get
         case .airQuality:
+            return .get
+        case .dress:
             return .get
         }
     }
@@ -53,6 +58,8 @@ extension WeatherAPI: TargetType {
             return "天气情况".data(using: String.Encoding.utf8)!
         case .airQuality:
             return "空气质量".data(using: String.Encoding.utf8)!
+        case .dress:
+            return "地址".data(using: String.Encoding.utf8)!
         }
     }
     
@@ -61,6 +68,8 @@ extension WeatherAPI: TargetType {
         case .weathers(let location):
             return .requestParameters(parameters: ["location" : location, "key" : kHeweatherKey], encoding: URLEncoding.default)
         case .airQuality(let location):
+            return .requestParameters(parameters: ["location" : location, "key" : kHeweatherKey], encoding: URLEncoding.default)
+        case .dress(let location):
             return .requestParameters(parameters: ["location" : location, "key" : kHeweatherKey], encoding: URLEncoding.default)
         }
     }

@@ -22,6 +22,7 @@
 		DC44433C20DA437B00FD9FA1 /* airQualityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC44433B20DA437B00FD9FA1 /* airQualityList.plist */; };
 		DC44433F20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44433D20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift */; };
 		DC44434020DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC44433E20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib */; };
+		DC5C065E20F84AFC0082043C /* DispatchQueue+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C065D20F84AFC0082043C /* DispatchQueue+extension.swift */; };
 		DC6A84A420D21389004C43AC /* YYBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84A220D21388004C43AC /* YYBaseCollectionViewController.swift */; };
 		DC6A84A520D21389004C43AC /* YYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84A320D21388004C43AC /* YYBaseViewController.swift */; };
 		DC6A84BA20D21487004C43AC /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A84A920D21487004C43AC /* Array+Extension.swift */; };
@@ -68,6 +69,9 @@
 		DC6A851420D26D96004C43AC /* YYAirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */; };
 		DC6A851720D26EA5004C43AC /* YYWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */; };
 		DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */; };
+		DC89ABDE20DC896400F13D78 /* YYMainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89ABDD20DC896400F13D78 /* YYMainNavigationView.swift */; };
+		DC89ABE020DC897000F13D78 /* YYMainNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC89ABDF20DC897000F13D78 /* YYMainNavigationView.xib */; };
+		DC8EC5CD20F59ECB007C86C4 /* YYTelephony.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EC5CC20F59ECB007C86C4 /* YYTelephony.swift */; };
 		DC9BD15B20DB383300B94ECB /* YYSearchDressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9BD15A20DB383300B94ECB /* YYSearchDressModel.swift */; };
 		DCDE58BD20D0CB9F00310A03 /* area.text in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BC20D0CB9F00310A03 /* area.text */; };
 		DCDE58BF20D0E87F00310A03 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDE58BE20D0E87F00310A03 /* area.plist */; };
@@ -77,6 +81,9 @@
 		DCF531E420DB451B00A81296 /* YYRightSeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF531E320DB451B00A81296 /* YYRightSeachView.swift */; };
 		DCF531E620DB452500A81296 /* YYRightSeachView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF531E520DB452500A81296 /* YYRightSeachView.xib */; };
 		DCF531E820DB491E00A81296 /* GARegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF531E720DB491E00A81296 /* GARegular.swift */; };
+		DCF531EA20DB523100A81296 /* YYLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF531E920DB523100A81296 /* YYLocationModel.swift */; };
+		DCF531EC20DB971300A81296 /* YYBaseNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF531EB20DB971300A81296 /* YYBaseNavigationView.swift */; };
+		DCF531EE20DB971A00A81296 /* YYBaseNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF531ED20DB971A00A81296 /* YYBaseNavigationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +107,7 @@
 		DC44433B20DA437B00FD9FA1 /* airQualityList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = airQualityList.plist; sourceTree = "<group>"; };
 		DC44433D20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAirQualityAreaViewController.swift; sourceTree = "<group>"; };
 		DC44433E20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYAirQualityAreaViewController.xib; sourceTree = "<group>"; };
+		DC5C065D20F84AFC0082043C /* DispatchQueue+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+extension.swift"; sourceTree = "<group>"; };
 		DC6A84A220D21388004C43AC /* YYBaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseCollectionViewController.swift; sourceTree = "<group>"; };
 		DC6A84A320D21388004C43AC /* YYBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseViewController.swift; sourceTree = "<group>"; };
 		DC6A84A920D21487004C43AC /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
@@ -146,6 +154,9 @@
 		DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAirQualityModel.swift; sourceTree = "<group>"; };
 		DC6A851620D26EA5004C43AC /* YYWeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWeatherAPI.swift; sourceTree = "<group>"; };
 		DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWeatherModel.swift; sourceTree = "<group>"; };
+		DC89ABDD20DC896400F13D78 /* YYMainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMainNavigationView.swift; sourceTree = "<group>"; };
+		DC89ABDF20DC897000F13D78 /* YYMainNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYMainNavigationView.xib; sourceTree = "<group>"; };
+		DC8EC5CC20F59ECB007C86C4 /* YYTelephony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTelephony.swift; sourceTree = "<group>"; };
 		DC9BD15A20DB383300B94ECB /* YYSearchDressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSearchDressModel.swift; sourceTree = "<group>"; };
 		DCDE58BC20D0CB9F00310A03 /* area.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = area.text; sourceTree = "<group>"; };
 		DCDE58BE20D0E87F00310A03 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
@@ -155,6 +166,9 @@
 		DCF531E320DB451B00A81296 /* YYRightSeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYRightSeachView.swift; sourceTree = "<group>"; };
 		DCF531E520DB452500A81296 /* YYRightSeachView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYRightSeachView.xib; sourceTree = "<group>"; };
 		DCF531E720DB491E00A81296 /* GARegular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GARegular.swift; sourceTree = "<group>"; };
+		DCF531E920DB523100A81296 /* YYLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYLocationModel.swift; sourceTree = "<group>"; };
+		DCF531EB20DB971300A81296 /* YYBaseNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYBaseNavigationView.swift; sourceTree = "<group>"; };
+		DCF531ED20DB971A00A81296 /* YYBaseNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYBaseNavigationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +298,8 @@
 			children = (
 				DC6A84A220D21388004C43AC /* YYBaseCollectionViewController.swift */,
 				DC6A84A320D21388004C43AC /* YYBaseViewController.swift */,
+				DCF531EB20DB971300A81296 /* YYBaseNavigationView.swift */,
+				DCF531ED20DB971A00A81296 /* YYBaseNavigationView.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -291,6 +307,7 @@
 		DC6A84A820D21487004C43AC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DC5C065D20F84AFC0082043C /* DispatchQueue+extension.swift */,
 				DC6A84A920D21487004C43AC /* Array+Extension.swift */,
 				DC6A84AA20D21487004C43AC /* CGSize+Extension.swift */,
 				DC6A84AB20D21487004C43AC /* Int+Extension.swift */,
@@ -332,6 +349,7 @@
 				DC7372C720D0B92A003FFB79 /* YYWeatherModel.swift */,
 				DC6A851320D26D96004C43AC /* YYAirQualityModel.swift */,
 				DC44432420D9F68000FD9FA1 /* YYWeatherListModel.swift */,
+				DCF531E920DB523100A81296 /* YYLocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,6 +382,8 @@
 				DC6A84EE20D24583004C43AC /* YYMainTableViewCell.xib */,
 				DC6A850E20D24A42004C43AC /* YYMainTableHeaderView.swift */,
 				DC6A851020D24A4D004C43AC /* YYMainTableHeaderView.xib */,
+				DC89ABDD20DC896400F13D78 /* YYMainNavigationView.swift */,
+				DC89ABDF20DC897000F13D78 /* YYMainNavigationView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -417,6 +437,7 @@
 			children = (
 				DCF531E720DB491E00A81296 /* GARegular.swift */,
 				DC6A84F320D2483B004C43AC /* YYRequest */,
+				DC8EC5CC20F59ECB007C86C4 /* YYTelephony.swift */,
 			);
 			path = TOOL;
 			sourceTree = "<group>";
@@ -554,6 +575,7 @@
 				DC6A84EA20D244F1004C43AC /* Main.storyboard in Resources */,
 				DC2178E220CFBA2800A777A9 /* Assets.xcassets in Resources */,
 				DC6A84DC20D243F2004C43AC /* YYMainCollectionViewCell.xib in Resources */,
+				DC89ABE020DC897000F13D78 /* YYMainNavigationView.xib in Resources */,
 				DC44432320D9EFFC00FD9FA1 /* weatherList.plist in Resources */,
 				DCF531E620DB452500A81296 /* YYRightSeachView.xib in Resources */,
 				DCDE58BD20D0CB9F00310A03 /* area.text in Resources */,
@@ -566,6 +588,7 @@
 				DC44433220DA3BC700FD9FA1 /* YYLeftTableViewCell.xib in Resources */,
 				DC6A851120D24A4D004C43AC /* YYMainTableHeaderView.xib in Resources */,
 				DC6A84E820D244F1004C43AC /* LaunchScreen.storyboard in Resources */,
+				DCF531EE20DB971A00A81296 /* YYBaseNavigationView.xib in Resources */,
 				DCDE58BF20D0E87F00310A03 /* area.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,10 +665,12 @@
 			files = (
 				DC6A851420D26D96004C43AC /* YYAirQualityModel.swift in Sources */,
 				DC6A850A20D2483C004C43AC /* YYTargetType+Extension.swift in Sources */,
+				DCF531EA20DB523100A81296 /* YYLocationModel.swift in Sources */,
 				DC6A84C020D21487004C43AC /* UICollectionView+Extension.swift in Sources */,
 				DC6A850220D2483C004C43AC /* GitHubAPI.swift in Sources */,
 				DC6A84BB20D21487004C43AC /* CGSize+Extension.swift in Sources */,
 				DC6A850520D2483C004C43AC /* MoyaMultiTargetViewController.swift in Sources */,
+				DC89ABDE20DC896400F13D78 /* YYMainNavigationView.swift in Sources */,
 				DC44433F20DA47BA00FD9FA1 /* YYAirQualityAreaViewController.swift in Sources */,
 				DC6A84C120D21487004C43AC /* UIColor+Extension.swift in Sources */,
 				DC6A84C320D21487004C43AC /* UIImage+Extension.swift in Sources */,
@@ -654,6 +679,7 @@
 				DC6A851720D26EA5004C43AC /* YYWeatherAPI.swift in Sources */,
 				DC6A84C520D21487004C43AC /* UIView+Frame.swift in Sources */,
 				DC7372C820D0B92A003FFB79 /* YYWeatherModel.swift in Sources */,
+				DC8EC5CD20F59ECB007C86C4 /* YYTelephony.swift in Sources */,
 				DC44432E20DA3B9B00FD9FA1 /* YYLeftViewController.swift in Sources */,
 				DC6A84DA20D243F2004C43AC /* YYMainViewController.swift in Sources */,
 				DC6A84C820D21487004C43AC /* UIView+LoadView.swift in Sources */,
@@ -686,11 +712,13 @@
 				DC6A84EF20D24583004C43AC /* YYMainTableViewCell.swift in Sources */,
 				DC6A84C620D21487004C43AC /* UIView+Gesture.swift in Sources */,
 				DC6A850620D2483C004C43AC /* YYBaseUrl.swift in Sources */,
+				DC5C065E20F84AFC0082043C /* DispatchQueue+extension.swift in Sources */,
 				DC6A850320D2483C004C43AC /* GitHubUserContentAPI.swift in Sources */,
 				DC6A84BF20D21487004C43AC /* String+Extension.swift in Sources */,
 				DC6A84C420D21487004C43AC /* UIImageView+Extension.swift in Sources */,
 				DC6A84C720D21487004C43AC /* UIView+Layout.swift in Sources */,
 				DC6A850420D2483C004C43AC /* MoyaBasicViewController.swift in Sources */,
+				DCF531EC20DB971300A81296 /* YYBaseNavigationView.swift in Sources */,
 				DC6A850920D2483C004C43AC /* YYRequestModel.swift in Sources */,
 				DC6A850820D2483C004C43AC /* YYRequestManager.swift in Sources */,
 			);

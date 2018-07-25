@@ -62,7 +62,7 @@ class YYMainCollectionViewCell: UICollectionViewCell {
             for model in weatherList {
                 switch model.row {
                 case YYWeatherDataType.date.rawValue:
-                    model.value = obj?.date ?? ""
+                    model.value = "今天：" + (obj?.date ?? "")
                     break
                 case YYWeatherDataType.sr.rawValue:
                     model.value = obj?.sr ?? ""
@@ -77,10 +77,10 @@ class YYMainCollectionViewCell: UICollectionViewCell {
                     model.value = obj?.ms ?? ""
                     break
                 case YYWeatherDataType.tmp_max.rawValue:
-                    model.value = obj?.tmp_max ?? ""
+                    model.value = (obj?.tmp_max ?? "") + "℃"
                     break
                 case YYWeatherDataType.tmp_min.rawValue:
-                    model.value = obj?.tmp_min ?? ""
+                    model.value = (obj?.tmp_min ?? "") + "℃"
                     break
                 case YYWeatherDataType.cond_code_d.rawValue:
                     model.value = obj?.cond_code_d ?? ""

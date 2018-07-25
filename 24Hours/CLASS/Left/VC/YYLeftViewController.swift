@@ -12,6 +12,8 @@ class YYLeftViewController: YYBaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var dataSource: [String] = ["当日天气", "空气质量"]
+    
     var mainVC: YYMainViewController!
     var airQualityModel: YYAirQualityModel?
     
@@ -35,11 +37,7 @@ class YYLeftViewController: YYBaseViewController {
 extension YYLeftViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: YYLeftTableViewCell.identifier) as! YYLeftTableViewCell
-        if (indexPath.row == 0) {
-            cell.titleLabel.text = "天气预报"
-        } else {
-            cell.titleLabel.text = "空气质量"
-        }
+        cell.titleLabel.text = dataSource[indexPath.row]
         return cell
     }
     
@@ -48,18 +46,23 @@ extension YYLeftViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
+        let text = dataSource[indexPath.row]
+        if text == "当日天气" {
             self.slideMenuController()?.changeMainViewController(self.mainVC, close: true)
             return
+        } else if text == "空气质量" {
+            let vc = YYAirQualityAreaViewController(nibName: "YYAirQualityAreaViewController", bundle: nil)
+            vc.airQualityModel = airQualityModel
+            let nav = UINavigationController(rootViewController: vc)
+            self.slideMenuController()?.changeMainViewController(nav, close: true)
+        } else if text == "未来天气情况" {
+            
+        } else {
+            
         }
-        
-        let vc = YYAirQualityAreaViewController(nibName: "YYAirQualityAreaViewController", bundle: nil)
-        vc.airQualityModel = airQualityModel
-        let nav = UINavigationController(rootViewController: vc)
-        self.slideMenuController()?.changeMainViewController(nav, close: true)
     }
 }

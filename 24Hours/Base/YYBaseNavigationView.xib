@@ -12,29 +12,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YYRightSeachView" customModule="_4Hours" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YYBaseNavigationView" customModule="_4Hours" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新增地址查询天气预报" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qjm-sR-TH3">
-                    <rect key="frame" x="15" y="0.0" width="345" height="44"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfu-FC-tzb">
+                    <rect key="frame" x="166.5" y="26.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                </textField>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="qjm-sR-TH3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="ept-8x-F1M"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qjm-sR-TH3" secondAttribute="bottom" id="hpz-1u-gDo"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qjm-sR-TH3" secondAttribute="trailing" constant="15" id="rq8-Mo-XN0"/>
-                <constraint firstItem="qjm-sR-TH3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vpf-Xt-fuw"/>
+                <constraint firstItem="Pfu-FC-tzb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5B6-VB-aRf"/>
+                <constraint firstItem="Pfu-FC-tzb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lwn-f1-qhB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="textField" destination="qjm-sR-TH3" id="Uap-rA-Jc4"/>
+                <outlet property="titleLabel" destination="Pfu-FC-tzb" id="DMA-Hf-uoQ"/>
             </connections>
+            <point key="canvasLocation" x="-21.5" y="-299"/>
         </view>
     </objects>
 </document>

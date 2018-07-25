@@ -12,6 +12,31 @@ import PKHUD
 
 class YYBaseViewController: UIViewController {
 
+    var kNavigationViewBottomSpace: CGFloat = 0
+    
+    var myTitle: String? {
+        didSet {
+            navigationView.myTitle = myTitle
+            self.title = myTitle
+        }
+    }
+    
+    lazy var navigationView: YYBaseNavigationView = {
+        var insets = UIEdgeInsets.zero
+        var height: CGFloat = 64
+        if UIDevice.current.isX {
+            if #available(iOS 11.0, *) {
+                insets = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
+                height -= kNavigationViewBottomSpace
+            }
+        }
+        let v = YYBaseNavigationView(frame: CGRect(x: 0, y: insets.bottom, width: UIScreen.main.bounds.width, height: height))
+        v.myDelegate = self
+        self.view.addSubview(v)
+        
+        return v
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,7 +44,6 @@ class YYBaseViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
     func scl_alert(title: String, subTitle: String, closeButtonTitle: String = "取消", showCloseButton: Bool = true, buttons: [String], clickedButtonHandler: @escaping (_ tag: Int, _ bTitle: String) -> ()) {
         
@@ -59,5 +83,15 @@ extension YYBaseViewController {
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo:UnsafeRawPointer) {
         pk_hud_success(text: "保存成功")
+    }
+}
+
+extension YYBaseViewController: YYBaseNavigationViewDelegate {
+    func baseNavigationViewLeftButtonClicked() {
+        
+    }
+    
+    func baseNavigationViewRightButtonClicked() {
+        
     }
 }

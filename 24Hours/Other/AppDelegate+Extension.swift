@@ -24,7 +24,7 @@ extension AppDelegate {
         
         slideMenuOptions()
         
-        let vc = SlideMenuController(mainViewController: mainViewController!, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        let vc = SlideMenuController(mainViewController: mainViewController!, leftMenuViewController: leftViewController)
         
         window?.rootViewController = vc
         window?.makeKeyAndVisible()

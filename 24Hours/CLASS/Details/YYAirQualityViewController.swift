@@ -20,7 +20,7 @@ class YYAirQualityViewController: YYBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "空气质量站点"
+        self.title = "主要含量"
         
         initViews()
         initData()
@@ -92,5 +92,9 @@ extension YYAirQualityViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return airQualityList.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

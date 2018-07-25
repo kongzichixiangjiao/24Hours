@@ -9,7 +9,12 @@
 import UIKit
 import RealmSwift
 
+protocol YYRightViewControllerDelegate: class {
+    func didSelectRow(model: YYSearchDressModel)
+}
 class YYRightViewController: YYBaseViewController {
+    
+    weak var delegate: YYRightViewControllerDelegate?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,6 +30,10 @@ class YYRightViewController: YYBaseViewController {
         initViews()
         
         initData()
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     func initData() {
@@ -75,8 +84,10 @@ extension YYRightViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.mainVC.requestAll(location: areas[indexPath.row].dress)
-        self.slideMenuController()?.changeMainViewController(self.mainVC, close: true)
+        delegate?.didSelectRow(model: areas[indexPath.row])
+        dismiss(animated: true, completion: nil)
+//        self.mainVC.requestAll(location: areas[indexPath.row].dress)
+//        self.slideMenuController()?.changeMainViewController(self.mainVC, close: true)
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
@@ -101,7 +112,11 @@ extension YYRightViewController: UITableViewDelegate, UITableViewDataSource {
         return "删除"
     }
     
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.y < -80) {
+            dismiss(animated: true, completion: nil)
+        }
+    }
 }
 
 extension YYRightViewController: YYRightSeachViewDelegate {
@@ -112,7 +127,7 @@ extension YYRightViewController: YYRightSeachViewDelegate {
         try! realm.write {
             realm.add(dress)
         }
-        areas.append(dress)
+        areas.insert(dress, at: 0)
         self.tableView.reloadData()
     }
 }
